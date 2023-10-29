@@ -1,0 +1,1 @@
+cout<<n2<<endl;

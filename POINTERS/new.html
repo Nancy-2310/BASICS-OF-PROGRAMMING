@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Email Validation Example</title>
+    <script>
+      function validateEmail() {
+        const email = document.getElementById("email").value;
+        // check if email ends with ".com" or ".in"
+        if (email.endsWith(".com") || email.endsWith(".in")) {
+          alert("Email is valid!");
+        } else {
+          alert("Email is invalid! Please enter an email address with the suffix '.com' or '.in'.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+      <input type="button" value="Validate Email" onclick="validateEmail()">
+    </form>
+  </body>
+</html>
+
+
